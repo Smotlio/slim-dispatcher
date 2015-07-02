@@ -1,8 +1,8 @@
 {
     "name": "sj/slim-dispatcher",
     "autoload": {
-        "psr-0" : {
-            "Sj" : "./"
+        "psr-4": {
+            "Sj\\": "./"
         }
     }
 }

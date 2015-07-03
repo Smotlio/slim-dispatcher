@@ -12,7 +12,7 @@ Class Router {
     protected $request;
     protected $errorHandler;
 
-    public function __construct() {
+    public function __construct($settings) {
 
         $env = Environment::getInstance();
         $this->request = new Request($env);
@@ -80,7 +80,7 @@ Class Router {
         }
 
         if($display404) { $errorController = new ErrorController;
-            $errorController->index();
+            $errorController->error();
 //            $errorController
 //            if(is_callable($this->errorHandler)) {
 //                call_user_func($this->errorHandler);

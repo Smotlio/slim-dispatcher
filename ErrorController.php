@@ -2,13 +2,14 @@
 
 namespace Sj;
 
-use Slim\Slim;
-
 Class ErrorController extends Controller {
 
-    public function index(){
+    public function error(){
 
-        $this->render('error', array(), 404);
+        $status = 404;
+        $msg = 'The route you were looking for could not be found!';
+
+        $this->render('error', array('error' => $status, 'msg' => $msg), $status);
     }
 
 }

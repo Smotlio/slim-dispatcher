@@ -79,12 +79,14 @@ Class Router {
             }
         }
 
-        if($display404) {
-            if(is_callable($this->errorHandler)) {
-                call_user_func($this->errorHandler);
-            } else {
-                echo "404 - route not found";
-            }
+        if($display404) { $errorController = new ErrorController;
+            $errorController->index();
+//            $errorController
+//            if(is_callable($this->errorHandler)) {
+//                call_user_func($this->errorHandler);
+//            } else {
+//                echo "404 - route not found";
+//            }
         }
     }
 

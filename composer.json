@@ -1,5 +1,8 @@
 {
     "name": "sj/slim-dispatcher",
+    "require": {
+        "sj/slim-mvc": "*"
+    },
     "autoload": {
         "psr-4": {
             "Sj\\": "./"

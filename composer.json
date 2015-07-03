@@ -1,7 +1,7 @@
 {
     "name": "sj/slim-dispatcher",
     "require": {
-        "sj/slim-mvc": "*"
+        "sj/slim-mvc": "dev-master"
     },
     "autoload": {
         "psr-4": {
